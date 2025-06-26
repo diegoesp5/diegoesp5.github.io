@@ -1,45 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>clase11</title>
-    <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: #333;
-            color: #f0f0f0;
-	    background-color: #15f;
-	    background-image: url("https://ethic.es/wp-content/uploads/2023/03/imagen-1280x768.jpg");
-	    background-repeat: repeat-y;
-	    background-size: 80%;
-	    background-position:center;
- 	    margin: 10%;
-        }
-        h1 {
-            color: #0066cc;
-	    font-weight: normal;
-	    text-align: center;
-	    text-decoration:upperline;
-        }
-        p {
-            font-size: 14px;
-            line-height: 1.6;
-            color: rgb(0, 150, 210);
-            font-style: italic;
-	    font-style: justify;
-	    text-transform: capitalize;
-	    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/1200px-International_Pok%C3%A9mon_logo.svg.png");
-        }
-        h2 {
-            color: rgba(250, 250, 50, 1);
-	    text-transform: uppercase;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pastelería Vásquez</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="estilos.css" />
 </head>
 <body>
-    <h1>TRABAJANDO CON CSS</h1>
-    <p>CSS (siglas en inglés de Cascading Style Sheets; en español: «hojas de estilo en cascada») es un lenguaje informático especializado en definir y cohesionar la presentación de un documento escrito en un lenguaje de marcado como HTML o XML</p>
+  <header>
+    <div class="header-row">
+      <div class="logo">
+        <img src="logo.png" alt="Logo Pastelería Vásquez" />
+      </div>
+
+      <div class="search-bar">
+        <input type="text" placeholder="Buscar productos en nuestra web" />
+        <button><i class="fas fa-search"></i></button>
+      </div>
+
+      <div class="icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+      </div>
+    </div>
+  </header>
+
+  <nav>
+    <a href="index.html">INICIO</a>
+    <a href="nosotros.html">NOSOTROS</a>
+    <a href="productos.html">PRODUCTOS</a>
+    <a href="contacto.html">CONTACTANOS</a>
+  </nav>
+
+    <section id="inicio" style="display: flex; align-items: center; flex-wrap: wrap; gap: 30px;">
+        <div style="flex: 1; min-width: 250px;">
+            <h2>Bienvenidos</h2>
+            <p>Descubre nuestras delicias artesanales hechas con amor y los mejores ingredientes.</p>
+        </div>
+        <div style="flex: 1; min-width: 250px;">
+            <img src="bienvenido.png" alt="Pastelera decorando" style="width: 100%; max-width: 400px; border-radius: 10px;">
+        </div>
+    </section>
+
+  <footer style="background-color: var(--vino); color: white; padding: 30px 20px;">
+    <div style="max-width: 400px; text-align: left;">
+      <h2 style="font-style: italic; margin-top: 0;">Contáctanos</h2>
+      <p><i class="fas fa-map-marker-alt"></i> Av. Santa Anita N°429, Chorrillos</p>
+      <p><i class="fas fa-envelope"></i> contacto@pasteleriavasquez.com</p>
+      <p><i class="fas fa-phone"></i> +51 987 654 321</p>
+      <p><strong>Horario de Atención:</strong><br><em>Lunes a Domingo: de 8 am a 10 pm</em></p>
+    </div>
+
+    <div style="text-align: center; margin-top: 30px; font-size: 14px;">
+        <p>&copy; 2025 Pastelería Vásquez. Todos los derechos reservados.</p>
+    </div>
+    </footer>
 </body>
 </html>
