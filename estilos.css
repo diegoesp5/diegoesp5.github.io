@@ -1,0 +1,124 @@
+:root {
+  --negro: #000000;
+  --rosado: #f8d9e0;
+  --coral: #ef5350;
+  --vino: #b71c1c;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  background-color: var(--rosado);
+  color: var(--negro);
+}
+
+.top-bar {
+  background-color: var(--negro);
+  color: white;
+  font-size: 14px;
+  text-align: right;
+  padding: 5px 20px;
+}
+
+header {
+  background-color: var(--negro);
+  color: white;
+  padding: 20px;
+}
+
+.header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.logo img {
+  height: 80px;
+}
+
+.search-bar {
+  display: flex;
+  flex: 1;
+  max-width: 500px;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+}
+
+.search-bar button {
+  background-color: var(--coral);
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.icons {
+  font-size: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.icons a {
+  color: white;
+  text-decoration: none;
+}
+
+nav {
+  background-color: var(--coral);
+  padding: 12px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 14px;
+  font-weight: bold;
+}
+
+section {
+  padding: 40px 30px;
+}
+
+section h2 {
+  color: var(--vino);
+}
+
+/* NUEVO: estilos para productos en tabla */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+td {
+  text-align: center;
+  padding: 15px;
+  vertical-align: top;
+}
+
+.producto-img {
+  width: 250px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+}
+
+footer {
+  background-color: var(--vino);
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+}
